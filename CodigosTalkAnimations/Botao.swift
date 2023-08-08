@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct BotaoView: View {
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 20)
                 .frame(width: 200, height: 60)
                 .foregroundColor(.white)
             Text("Ação")
-                .foregroundColor(.orange)
+                .foregroundColor(.indigo)
         }
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
+struct BotaoView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView()
+        BotaoView()
     }
 }

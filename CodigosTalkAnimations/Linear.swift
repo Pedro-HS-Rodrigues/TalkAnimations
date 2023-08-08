@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct Linear: View {
+    @State var animation = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            LinearGradient(colors: [.pink, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
+            VStack{
+                Image(systemName: "play.circle")
+                    .resizable()
+                    .frame(width: animation ? 200 : 50, height: animation ? 200 : 50)
+                    .offset(x: animation ? 0 : 0, y: animation ? -205 : 0)
+                    .padding(.bottom)
+                BotaoView()
+                    .onTapGesture {
+                        withAnimation(.linear(duration: 1.0)){
+                            animation.toggle()
+                        }
+                    }
+            }
+        }.ignoresSafeArea()
     }
 }
 
