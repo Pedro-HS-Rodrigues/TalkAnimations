@@ -19,7 +19,7 @@ struct Rotation: View {
                     .rotationEffect(.degrees(angle))
                     .frame(width: animation ? 300 : 1, height: animation ? 300 : 1)
                     .offset(y: animation ? -95 : 0)
-                    
+                
                 BotaoView()
                     .onTapGesture {
                         withAnimation(.spring(response: 2.5, dampingFraction: 0.9, blendDuration: 0)){
@@ -30,16 +30,16 @@ struct Rotation: View {
             }
         }.ignoresSafeArea()
     }
-//    func springRotation(){
-//        withAnimation(.linear(duration: 1.0).repeatCount(1)){
-//
-//            angle += 360*5
-//        }
-//
-//        withAnimation(.spring(response: 1.5, dampingFraction: 0.9, blendDuration: 0)){
-//            animation.toggle()
-//        }
-//    }
+        func springRotation(){
+            withAnimation(.linear(duration: 1.0).repeatCount(1)){
+    
+                angle += 360*5
+            }
+    
+            withAnimation(.spring(response: 1.5, dampingFraction: 0.9, blendDuration: 0)){
+                animation.toggle()
+            }
+        }
 }
 
 struct Rotation_Previews: PreviewProvider {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E877ABE2AE9E7C0003CA377 /* notificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E877ABD2AE9E7C0003CA377 /* notificacao.swift */; };
 		1EB6BA612A786D8200817561 /* CodigosTalkAnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6BA602A786D8200817561 /* CodigosTalkAnimationsApp.swift */; };
 		1EB6BA632A786D8200817561 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6BA622A786D8200817561 /* ContentView.swift */; };
 		1EB6BA652A786D8300817561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB6BA642A786D8300817561 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E877ABD2AE9E7C0003CA377 /* notificacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificacao.swift; sourceTree = "<group>"; };
 		1EB6BA5D2A786D8200817561 /* CodigosTalkAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodigosTalkAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB6BA602A786D8200817561 /* CodigosTalkAnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodigosTalkAnimationsApp.swift; sourceTree = "<group>"; };
 		1EB6BA622A786D8200817561 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,9 +77,10 @@
 				1EB6BA712A7871F400817561 /* EaseIn.swift */,
 				1EB6BA732A787A3000817561 /* Linear.swift */,
 				1EB6BA752A787CF700817561 /* Spring.swift */,
-				1EB6BA642A786D8300817561 /* Assets.xcassets */,
 				1EB6BAF52A7D9A3A00817561 /* Surprise.swift */,
 				1EB6BAE62A7B285700817561 /* Rotation.swift */,
+				1E877ABD2AE9E7C0003CA377 /* notificacao.swift */,
+				1EB6BA642A786D8300817561 /* Assets.xcassets */,
 				1EB6BA662A786D8300817561 /* CodigosTalkAnimations.entitlements */,
 				1EB6BA672A786D8300817561 /* Preview Content */,
 			);
@@ -180,6 +183,7 @@
 				1EB6BA612A786D8200817561 /* CodigosTalkAnimationsApp.swift in Sources */,
 				1EB6BA702A78710D00817561 /* Botao.swift in Sources */,
 				1EB6BAF62A7D9A3A00817561 /* Surprise.swift in Sources */,
+				1E877ABE2AE9E7C0003CA377 /* notificacao.swift in Sources */,
 				1EB6BA742A787A3000817561 /* Linear.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

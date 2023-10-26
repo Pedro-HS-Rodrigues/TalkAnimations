@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct EaseIn: View {
+    
     @State var animation = false
+    
     var body: some View {
         ZStack{
             LinearGradient(colors: [.mint, .cyan, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
@@ -20,11 +22,10 @@ struct EaseIn: View {
                     .padding(.bottom)
                 BotaoView()
                     .onTapGesture {
-                        withAnimation(.easeIn(duration: 1.0)){
+                        withAnimation(.easeOut(duration: 2.0)){
                             animation.toggle()
                         }
                     }
-                
             }
         }
         .ignoresSafeArea()

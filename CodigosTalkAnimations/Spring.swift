@@ -21,7 +21,7 @@ struct Spring: View {
                 
                 BotaoView()
                     .onTapGesture {
-                        withAnimation(.spring(response: 1.5, dampingFraction: 0.9, blendDuration: 0)){
+                        withAnimation(.spring(response: 3.5, dampingFraction: 0.7, blendDuration: 0)){
                             animation.toggle()
                         }
                     }
